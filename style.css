@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  color: black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  width: auto;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(227, 227, 227);
+  background: #efecec;
+  font-size: 1.2rem;
+  box-shadow: 2px 4px 4px gray;
+  transition: background;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+button.equale {
+  grid-row: span 2;
+  background-color: #4caf50; /* Give the equal button a distinct color */
+  color: white;
+}
+
+button.zero {
+  grid-column: span 2;
+}
